@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html>
+<meta charset="UTF-8">
+
+<title>Medical Store</title>
+<head><div style="background-color:cyan;text-align:center;"><h1>Medical Store</h1></div>
+</head>
+<form >
+<div style="border:1px solid grey; margin:5px;padding:8px;text-align:center">
+  <table border="1" id="BillingTable">
+  <tbody>
+  <caption style="border:1px solid grey; margin:5px;padding:8px;text-align:center"><h3>Billing System<h3></caption>
+ <tr>
+ <th>Medicines</th>
+ <th>Units</th>
+ <th>Price per Unit</th>
+ <th>Total Price</th>
+ </tr>
+  <tr id="row1">
+  <td>
+  <input list="medicines">
+  <datalist id="medicines">
+    <option value="Citrizen">
+    <option value="Dolo 650">
+    <option value="Saridon">
+    <option value="Crocine">
+    <option value="NexPro">
+  </datalist></td>
+  <td><input type="number" id="a" oninput="myFunction(document.getElementById('a').value,document.getElementById('b').value,document.getElementById('c'))" ></td>
+  <td><input type="number" id="b" ></td>
+  <td><input id="c" class="count-me"></td>
+  </tr>
+   <tr id="row2">
+  <td>	
+  <input list="medicines">
+  <datalist id="medicines">
+    <option value="Citrizen">
+    <option value="Dolo 650">
+    <option value="Saridon">
+    <option value="Crocine">
+    <option value="NexPro">
+  </datalist></td>
+  <td><input type="number" id="d" oninput="myFunction(document.getElementById('d').value,document.getElementById('e').value,document.getElementById('f'))" ></td>
+  <td><input type="number" id="e" ></td>
+  <td><input id="f" class="count-me"></td>
+  </tr>
+   <tr id="row3">
+  <td>
+  <input list="medicines">
+  <datalist id="medicines">
+    <option value="Citrizen">
+    <option value="Dolo 650">
+    <option value="Saridon">
+    <option value="Crocine">
+    <option value="NexPro">
+  </datalist></td>
+  <td><input type="number" id="g" oninput="myFunction(document.getElementById('g').value,document.getElementById('h').value,document.getElementById('i'))" ></td>
+  <td><input type="number" id="h" ></td>
+  <td><input id="i" class="count-me"></td>
+  </tr>
+   <tr id="row4">
+  <td>
+  <input list="medicines">
+  <datalist id="medicines">
+    <option value="Citrizen">
+    <option value="Dolo 650">
+    <option value="Saridon">
+    <option value="Crocine">
+    <option value="NexPro">
+  </datalist></td>
+  <td><input type="number" id="j" oninput="myFunction(document.getElementById('j').value,document.getElementById('k').value,document.getElementById('l'))" ></td>
+  <td><input type="number" id="k" ></td>
+  <td><input id="l" class="count-me"></td>
+  </tr>
+   <tr id="row5">
+  <td>
+  <input list="medicines">
+  <datalist id="medicines">
+    <option value="Citrizen">
+    <option value="Dolo 650">
+    <option value="Saridon">
+    <option value="Crocine">
+    <option value="NexPro">
+  </datalist></td>
+  <td><input type="number" id="m" oninput="myFunction(document.getElementById('m').value,document.getElementById('n').value,document.getElementById('o'))" ></td>
+  <td><input type="number" id="n" ></td>
+  <td><input id="o" class="count-me"></td>
+  </tr>
+   <tr id="row6">
+  <td>
+  <input list="medicines" name="browser">
+  <datalist id="medicines">
+    <option value="Citrizen">
+    <option value="Dolo 650">
+    <option value="Saridon">
+    <option value="Crocine">
+    <option value="NexPro">
+  </datalist></td>
+  <td><input type="number" id="p" oninput="myFunction(document.getElementById('p').value,document.getElementById('q').value,document.getElementById('r'))" ></td>
+  <td><input type="number" id="q" ></td>
+  <td><input id="r" class="count-me"></td>
+  </tr>
+  <tr id="row7"><td colspan=3">TOTAL AMOUNT</td>
+  <td><div id='countit'></div></td></tr>
+  </tbody>
+  </table>
+  </div>
+</form>
+  <script type="text/javascript">
+  var temp=0;
+ 	function myFunction(x,y,z) {
+	var output=x*y;
+	z.value=output;
+	temp=temp+output;
+	document.getElementById('countit').innerHTML=temp;
+  } 
+</script>
+<footer style="color:white;background-color:#444;margin-bottom:250px">
+<p>&copy; Section E Group 7th Group. All rights reserved.</p>
+</footer>
+</body>
+</html>
+
+<!--<input type="button" onclick="alert('Hello World!')" value="Click Me!">
+<section>
+  <h1>WWF</h1>
+  <p>The World Wide Fund for Nature (WWF) is....</p>
+</section>
+<nav>
+<ul>
+  <li>News</li>
+  <li>Sports</li>
+  <li>Weather</li>
+</ul>
+</nav>
+
+<header>
+<h1>Monday Times</h1>
+</header>
+header,footer {
+    color:white;background-color:#444;margin-bottom:5px;
+}
+
+
+<tr>
+  <td>
+  <input list="medicines" name="browser">
+  <datalist id="medicines">
+    <option value="Citrizen">
+    <option value="Dolo 650">
+    <option value="Saridon">
+    <option value="Crocine">
+    <option value="NexPro">
+  </datalist></td>
+  <td><input type="number" id="a2" name="a2" value="0"></td>
+  <td><input type="number" id="b2" name="b2" value="0"></td>
+  <td><output name="x" for="a2 b2"></output></td></tr>
+  <tr>
+  <td>
+  <input list="medicines" name="browser">
+  <datalist id="medicines">
+    <option value="Citrizen">
+    <option value="Dolo 650">
+    <option value="Saridon">
+    <option value="Crocine">
+    <option value="NexPro">
+  </datalist></td>
+  <td><input type="number" id="a" name="a" value="0"></td>
+  <td><input type="number" id="b" name="b" value="0"></td>
+  <td><output name="x" for="a b"></output></td></tr>
+  <tr>
+  <td>
+  <input list="medicines" name="browser">
+  <datalist id="medicines">
+    <option value="Citrizen">
+    <option value="Dolo 650">
+    <option value="Saridon">
+    <option value="Crocine">
+    <option value="NexPro">
+  </datalist></td>
+  <td><input type="number" id="a" name="a" value="0"></td>
+  <td><input type="number" id="b" name="b" value="0"></td>
+  <td><output name="x" for="a b"></output></td></tr>
+  <tr>
+  <td>
+  <input list="medicines" name="browser">
+  <datalist id="medicines">
+    <option value="Citrizen">
+    <option value="Dolo 650">
+    <option value="Saridon">
+    <option value="Crocine">
+    <option value="NexPro">
+  </datalist></td>
+  <td><input type="number" id="a" name="a" value="0"></td>
+  <td><input type="number" id="b" name="b" value="0"></td>
+  <td><output name="x" for="a b"></output></td></tr>
+  <tr>
+  <td>
+  <input list="medicines" name="browser">
+  <datalist id="medicines">
+    <option value="Citrizen">
+    <option value="Dolo 650">
+    <option value="Saridon">
+    <option value="Crocine">
+    <option value="NexPro">
+  </datalist></td>
+  <td><input type="number" id="a" name="a" value="0"></td>
+  <td><input type="number" id="b" name="b" value="0"></td>
+  <td><output name="x" for="a b"></output></td></tr>
+  <tr>
+  <td>  <input list="medicines" name="browser">
+  <datalist id="medicines">
+    <option value="Citrizen">
+    <option value="Dolo 650">
+    <option value="Saridon">
+    <option value="Crocine">
+    <option value="NexPro">
+  </datalist></td>
+  <td><input type="number" id="a" name="a" value=""></td>
+  <td><input type="number" id="b" name="b" value="0"></td>
+  <td><output name="x" for="a b"></output></td></tr>
